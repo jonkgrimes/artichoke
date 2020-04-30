@@ -44,6 +44,7 @@ core:
   - suite: hash
     specs:
       - compact
+      - slice
       - values_at
   - suite: comparable
   - suite: env

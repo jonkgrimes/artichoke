@@ -329,6 +329,17 @@ class Hash
     self
   end
 
+  def slice(*keys)
+    return {} if keys.length == 0
+
+    new_hash = Hash.new
+    keys.each do |key|
+      value = Hash.instance_method(:[]).bind(self).call(key)
+      new_hash[key] = value if value
+    end
+    new_hash
+  end
+
   def to_h
     self
   end
