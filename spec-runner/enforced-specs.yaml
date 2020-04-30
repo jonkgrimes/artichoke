@@ -44,6 +44,7 @@ core:
   - suite: hash
     specs:
       - compact
+      - values_at
   - suite: comparable
   - suite: env
     skip:

@@ -383,6 +383,12 @@ class Hash
     self
   end
 
+  def values_at(*keys)
+    keys.map do |key|
+      self[key]
+    end
+  end
+
   alias each_pair each
   alias initialize_copy replace
   alias to_s inspect
