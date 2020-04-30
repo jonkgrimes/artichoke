@@ -97,7 +97,7 @@ class Hash
     non_nil_valued_keys = keys.reject do |k|
       self[k].nil?
     end
-    return nil if keys.size == nk.size
+    return nil if keys.size == non_nil_valued_keys.size
 
     hash = non_nil_valued_keys.each_with_object({}) do |key, memo|
       memo[key] = self[key]

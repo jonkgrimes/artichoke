@@ -41,6 +41,9 @@ core:
       - to_ary
       - try_convert
       - unshift
+  - suite: hash
+    specs:
+      - compact
   - suite: comparable
   - suite: env
     skip:
