@@ -1,0 +1,7 @@
+---
+# This config file lists the ruby/specs that are enforced as passing in
+# Artichoke Ruby during CI.
+core:
+  - suite: hash
+    specs:
+      - delete
