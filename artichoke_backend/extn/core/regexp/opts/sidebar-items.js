@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["parse",""],["parse_pattern",""]],"struct":[["Options",""]]});
+initSidebarItems({"enum":[["RegexpOption","The state of a Regexp engine flag in [`Options`]."]],"struct":[["Options","Configuration options for Ruby Regexps."]]});
